@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tap Critter</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="top-bar">
+        <h1>Tap Critter</h1>
+        <div class="coins">Coins: <span id="coin-count">0</span></div>
+      </header>
+
+      <main class="game-layout">
+        <div class="canvas-wrap">
+          <canvas id="game-canvas" width="420" height="720"></canvas>
+        </div>
+        <aside class="upgrades">
+          <h2>Upgrades</h2>
+          <button id="tap-upgrade" class="upgrade-button">Upgrade Tap</button>
+          <button id="idle-upgrade" class="upgrade-button">Upgrade Idle</button>
+        </aside>
+      </main>
+    </div>
+
+    <div id="offline-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-card">
+        <h2>Welcome Back!</h2>
+        <p id="offline-text">You earned 0 coins while away.</p>
+        <button id="offline-collect">Collect</button>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
